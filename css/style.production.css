@@ -49,7 +49,15 @@ body{
     color:#696969;
     background-color: #474743;
 }
-
+h1 {
+    color:#20b2aa
+}
+h2 {
+    color:#20b2aa
+}
+h3 {
+    color:#20b2aa
+}
 p {
     font-size: 20px;
     color: #c7c7c7;

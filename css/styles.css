@@ -55,7 +55,9 @@ body{
     color:var(--tertiary-color);
     background-color: var(--primary-color);
 }
-
+h1,h2,h3 {
+    color:var(--color-12)
+}
 p {
     font-size: 20px;
     color: var(--secondary-color);
