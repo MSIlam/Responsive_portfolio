@@ -1,0 +1,434 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+* {
+    -webkit-box-sizing:border-box;
+            box-sizing:border-box
+}
+
+/* header styling with flex layout */
+
+.page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    margin:auto;
+}
+.page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+}
+.page-header .page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+}
+.navigation-list {
+    list-style-type: none;
+}
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+/* ######################################### */
+
+/* font styling and background color setting*/
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color:#696969;
+    background-color: #474743;
+}
+
+p {
+    font-size: 20px;
+    color: #c7c7c7;
+}
+
+/* .logo {
+    font-family:Copperplate, Papyrus, fantasy;
+    font-size: xx-large;
+    display: flex;
+} */
+
+
+*:not(a) {
+    color: rgb(255, 255, 255);
+}
+
+input {
+    color:#000000;
+}
+/* ######################################## */
+
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    text-align: justify;
+}
+
+/* apply float to the image */
+.profile__portrait {
+    float:left;
+    margin-right: 30px;
+    height: auto;
+    border-radius: 10%;
+}
+
+/* work.html grid design */
+#grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 20px 200px 20px 200px 20px 200px;
+    grid-template-columns: 200px 200px 200px 200px;
+    /* grid-template-rows: 200px 200px 200px 200px; */
+    grid-gap: 20px;
+}
+
+#grid-container .grid-item {
+background-color: #d3d3d3;
+color: #000000;
+min-height: 100px;
+text-align: center;
+}
+
+/* footer styling */
+.page-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    clear: both;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    border-top: double;
+}
+.social-media a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    opacity: .5;
+}
+
+.social-media a:focus {
+    outline: none;
+}
+
+/*#############################################*/
+
+/* About stylings */
+.about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    clear: both;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+.animation-sample {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.my-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    clear: both;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+
+/*link stylings*/
+a {
+color: #e0ffff;
+text-decoration: none;
+}
+
+a:hover {
+    /*no underlining when hovering over a link*/
+    color:#f08080;
+    text-decoration: none;
+}
+
+a:active {
+    /*selected link*/
+    color: #008000;
+}
+
+a:focus {
+    outline: 2px solid #008000;
+}
+
+.navigation-list__item--active {
+    text-decoration: underline;
+    color:#ffffff;
+}
+
+/* button styling */
+button {
+    background-color:#008080;
+    color: #ffffff;
+    font-size: 16px;
+    padding:5px;
+    opacity: 0.8;
+}
+
+button:hover {
+    background-color: #2f4f4f;
+    cursor:pointer;
+}
+button:active {
+    background-color: #0000ff;
+}
+button:focus {
+    border: 2px solid #000000;
+}
+.button_secondary {
+    background-color: #556b2f;
+    opacity: .5;
+}
+/*####################################################*/
+
+/* media query rules */
+
+@media all and (max-width: 500px) {
+    h1, h2 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+    #grid-container {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all  and  (min-width: 500px) and (max-width: 750px){
+    #grid-container {
+        -ms-grid-columns: 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 750px){
+    #grid-container {
+        grid-gap: 10px;
+    }
+    .grid-item {
+        grid-column: auto/auto;
+        grid-row: auto/auto;
+    }
+}
+
+/* css transition */
+
+.button {
+border: none;
+background-color: #20b2aa;
+color:#ffffff;
+-webkit-transition-duration: 0.2s;
+     -o-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+border-radius: 3px;
+}
+
+button {
+border: none;
+background-color: #20b2aa;
+color:#ffffff;
+-webkit-transition-duration: 0.2s;
+     -o-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+border-radius: 3px;
+}
+
+
+
+/* css animation */
+
+/* .animation {
+    display: flex;
+    text-align: center;
+} */
+
+
+svg * {
+    transform-box: fill-box;
+}
+#Rectangle-2, #Rectangle-1{
+   -webkit-animation: 10s color-change2 infinite alternate linear;
+           animation: 10s color-change2 infinite alternate linear;
+   
+}
+#Its-a-sample {
+    fill: #faebd7
+}
+
+#Polygon-1, #Vector-1 {
+    -webkit-animation: 10s color-change infinite alternate linear;
+            animation: 10s color-change infinite alternate linear;
+}
+
+ellipse.Ellipse {
+    -webkit-animation: 10s shape-move infinite alternate;
+            animation: 10s shape-move infinite alternate;
+}
+
+@-webkit-keyframes color-change {
+    0% {
+        fill:#556b2f;
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+    50% {
+        fill:#008080;
+        -webkit-transform: rotateY(60deg);
+                transform: rotateY(60deg);
+    }
+    100% 
+    {
+        fill:#f08080;
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+}
+
+@keyframes color-change {
+    0% {
+        fill:#556b2f;
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+    50% {
+        fill:#008080;
+        -webkit-transform: rotateY(60deg);
+                transform: rotateY(60deg);
+    }
+    100% 
+    {
+        fill:#f08080;
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+}
+@-webkit-keyframes color-change2 {
+    0% {
+        fill:#2f4f4f;
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+    50% {
+        fill:#20b2aa;
+        -webkit-transform: rotateY(60deg);
+                transform: rotateY(60deg);
+    }
+    100% 
+    {
+        fill: #008000;
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+}
+@keyframes color-change2 {
+    0% {
+        fill:#2f4f4f;
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+    50% {
+        fill:#20b2aa;
+        -webkit-transform: rotateY(60deg);
+                transform: rotateY(60deg);
+    }
+    100% 
+    {
+        fill: #008000;
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+}
+
+ @-webkit-keyframes shape-move {
+    from {
+        -webkit-transform: scale (.5,.3);
+                transform: scale (.5,.3);
+        fill:#556b2f;
+    }
+    to 
+    {
+        fill:#20b2aa;
+        -webkit-transform: scale(.8,.4);
+                transform: scale(.8,.4);
+    }
+}
+
+ @keyframes shape-move {
+    from {
+        -webkit-transform: scale (.5,.3);
+                transform: scale (.5,.3);
+        fill:#556b2f;
+    }
+    to 
+    {
+        fill:#20b2aa;
+        -webkit-transform: scale(.8,.4);
+                transform: scale(.8,.4);
+    }
+}
+
+/* animate the text and main body */
+@-webkit-keyframes move {
+    from {left: -40px; opacity:.1}
+    to {left: 0px; opacity: 1;}
+}
+@keyframes move {
+    from {left: -40px; opacity:.1}
+    to {left: 0px; opacity: 1;}
+}
+
+main {
+    position: relative;
+    -webkit-animation-name: move;
+            animation-name: move;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
