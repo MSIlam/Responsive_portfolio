@@ -50,13 +50,13 @@ body{
     background-color: #474743;
 }
 h1 {
-    color:#20b2aa
+    color:#20b2aa !important;
 }
 h2 {
-    color:#20b2aa
+    color:#20b2aa !important;
 }
 h3 {
-    color:#20b2aa
+    color:#20b2aa !important;
 }
 p {
     font-size: 20px;
