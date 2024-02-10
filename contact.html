@@ -1,109 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/Favi.png" sizes="32x32" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+    <title>Muhammad's Portfolio about</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <title> Muhammad's Portfolio contact</title>
-</head>
-
-<body>
+  <body>
     <header class="page-header">
-        <img class="page-header__item" src="img/Muhammad-logos.png" height="100px" alt="logo">
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item"> Home </a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">
-                        Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="my-contact">
-            <div>
-                <h3>Adress</h3>
-                <p>
-                    Romerstr. 24 <br>
-                    49357, Syke <br>
-                    Deutschland <br>
-                </p>
-            </div>
-            <div>
-                <h3> Contact</h3>
-                <a href="tel:+4917622352810">+4917622352810</a> <br>
-                <a href="mailto:saiful.zoology@yahoo.com">saiful.zoology@yahoo.com</a>
-            </div>
+      <a href="index.html" role="menuitem" class="navigation-list__item">
+        <img
+          class="page-header__item"
+          src="img/Muhammad-logos.png"
+          alt="logo"
+        />
+      </a>
+
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item">
+              Home
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Projects</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+            >
+              Contact</a
+            >
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        <!-- <div>
-            <h3>Contact form</h3>
-            <div class="form-container">
-                <form class="contact-form" action="/" method="get" onsubmit="alert('Thanks for contacting me')">
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="text">Name</label>
-                        </div>
-                        <div class="col-50">
-                            <input type="text" id="text">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="date">Date of birth</label>
-                        </div>
-                        <div class="col-50">
-                            <input type="date" id="date">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="email">E-mail</label>
-                        </div>
-                        <div class="col-50">
-                            <input type="email" id="email" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="adress">Adress</label>
-                        </div>
-                        <div class="col-50">
-                            <textarea id="adress" name="adress" type="text" placeholder="type here.."></textarea>
-                        </div>
-                    </div>
-                    <div class="submit-button">
-                        <button type="submit" value="submit"> Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div> -->
+      </nav>
+    </header>
+    <main class="contact">
+      <div class="main-contact">
+        <div class="my-contact">
+          <div>
+            <h3>Let's get in touch</h3>
+            <p>
+              I will be happy to respond promptly to any meaningful connection.
+              Please feel free to call, email, or reach out through the form.
+              <br />
+            </p>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <span>
+              <img src="img/call.png" alt="call icon" width="25" height="25" />
+              <a href="tel:+4917622352810">+4917622352810</a> <br />
+            </span>
+            <span>
+              <img src="img/email.png" alt="what" width="25" height="25" />
+              <a href="mailto:muhammad.si.8891@gmail.com"
+                >muhammad.si.8891@gmail.com</a
+              >
+            </span>
+          </div>
+        </div>
+        <div class="form-container">
+          <div>
+            <h3>Write to me</h3>
+
+            <form
+              class="contact-form"
+              action="https://getform.io/f/e1456d83-d3f2-40be-8058-e177d34ae084"
+              method="POST"
+              onsubmit="alert('Thanks for your message! I will be in touch soon!')"
+            >
+              <div class="row">
+                <div class="col-25">
+                  <label for="text">Name</label>
+                </div>
+                <div class="col-50">
+                  <input
+                    placeholder="Enter your name"
+                    type="text"
+                    id="text"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="email">E-mail</label>
+                </div>
+                <div class="col-50">
+                  <input
+                    placeholder="Enter your email"
+                    type="email"
+                    id="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="adress">Message </label>
+                </div>
+                <div class="col-50">
+                  <textarea
+                    id="adress"
+                    name="adress"
+                    type="text"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div class="submit-button">
+                <button type="submit" value="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-            <a class="social-media__item" href="#"><img id="twitter" src="img/twitter_L.svg" alt="twitter" height="48"
-                    width="48"></a>
-            <a class="social-media__item" href="https://github.com/Muhammad88IT/Responsive_portfolio" target="_blank"><img id="github" src="img/github_L.svg" alt="github" height="48"
-                    width="48"></a>
-            <a class="social-media__item" href="http://www.linkedin.com/in/muhammad-saiful-islam-801a5516b"
-                target="_blank"><img id="linkdin" src="img/linkedin_L.svg" alt="LinkdIn" height="48" width="48"></a>
-        </div>
+      <p class="text-social">Find me on</p>
+      <div class="social-media">
+        <a
+          class="social-media__item"
+          href="https://github.com/MSIlam/Responsive_portfolio"
+          target="_blank"
+          ><img
+            id="github"
+            src="img/github_L.svg"
+            alt="github"
+            height="48"
+            width="48"
+        /></a>
+        <a
+          class="social-media__item"
+          href="http://www.linkedin.com/in/muhammad-saiful-islam-801a5516b"
+          target="_blank"
+          ><img
+            id="linkdin"
+            src="img/linkedin_L.svg"
+            alt="LinkdIn"
+            height="48"
+            width="48"
+        /></a>
+      </div>
     </footer>
     <!-- <script src="js/tota11y.min.js"></script> -->
-</body>
-
+    <script src="js/navbar.js"></script>
+  </body>
 </html>

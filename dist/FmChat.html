@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="img/Favi.png" sizes="32x32" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <title>Muhammad's Portfolio</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="/index.html" role="menuitem" class="navigation-list__item">
+        <img
+          class="page-header__item"
+          src="/img/Muhammad-logos.png"
+          alt="logo"
+        />
+      </a>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="/index.html" role="menuitem" class="navigation-list__item">
+              Home
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="/about.html" role="menuitem" class="navigation-list__item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="/work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Projects</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="/contact.html"
+              role="menuitem"
+              class="navigation-list__item"
+            >
+              Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="projects-class">
+      <div class="details_container">
+        <div>
+          <button><a href="/work.html">Back to projects</a></button>
+        </div>
+        <h1>FmChat (React Native mobile application)</h1>
+        <div>
+          <img class="project-image" src="/img/chatfmL.PNG" alt="cineF" />
+        </div>
+        <div>
+          <p>
+            The React Native Mobile FmChat App is a native application
+            meticulously optimized for both Android and iOS platforms.
+            Constructed using React Native and Firebase, it delivers a smooth
+            and intuitive chat experience, encompassing functionalities such as
+            image and location sharing, along with the capability to access
+            messages offline.
+          </p>
+        </div>
+        <div>
+          <h2>Development approach</h2>
+          <p>
+            In the development process, I first set up the Expo environment for
+            React Native, incorporating dependencies and libraries. The chat
+            functionality was implemented using the Gifted Chat library, with a
+            focus on accessibility for users with disabilities. Firebase
+            anonymous authentication facilitated user access to chat without
+            explicit account creation, while Firestore enabled seamless storage,
+            retrieval, and real-time synchronization of chat conversations.
+            Offline functionality was ensured by configuring React Native's
+            asyncStorage API to locally store chats and using the NetInfo
+            package to check and handle online/offline status. Communication
+            features were enhanced with an Actionsheet allowing image selection,
+            camera access, and location sharing, implemented through
+            expo-image-picker, expo-location, and expo-camera APIs.
+          </p>
+        </div>
+        <div class="text-styles">
+          <h2>Features</h2>
+          <ul>
+            <li>Enter username</li>
+            <li>Choose background color</li>
+            <li>Send and receive messages</li>
+            <li>Share pictures from the devices gallery</li>
+            <li>Take and share photos</li>
+            <li>Share location</li>
+            <li>The app was built using the TDD technique.</li>
+            <li>See past messages even while offline</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Tech stack</h2>
+          <ul>
+            <li>React Native</li>
+            <li>Expo</li>
+            <li>Gifted Chat</li>
+            <li>Firebase (Googles cloudbased database)</li>
+            <li>React navigator</li>
+            <li>useNetInfo</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Live links</h2>
+          <p>
+            There is no live demo available. See GitHub readme for instructions
+            to use/test it.
+          </p>
+          <button>
+            <a
+              href="https://github.com/MSIlam/ChatFm"
+              class="button button_secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </button>
+        </div>
+        <div>
+          <h2>Challenges and merits</h2>
+          <p>
+            I encountered challenges setting up Expo for this native application
+            and ensuring simultaneous functionality with other devices (mobile,
+            webserver). However, after troubleshooting, I successfully resolved
+            the issues. Overall, it was a valuable learning experience in the
+            development of this native app.
+          </p>
+        </div>
+
+        <div>
+          <button><a href="/work.html">Back to projects</a></button>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a class="social-media__item" href="#"
+          ><img
+            id="twitter"
+            src="/img/twitter_L.svg"
+            alt="twitter"
+            height="48"
+            width="48"
+        /></a>
+        <a
+          class="social-media__item"
+          href="https://github.com/MSIlam/Responsive_portfolio"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            id="github"
+            src="/img/github_L.svg"
+            alt="github"
+            height="48"
+            width="48"
+        /></a>
+        <a
+          class="social-media__item"
+          href="http://www.linkedin.com/in/muhammad-saiful-islam-801a5516b"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            id="linkdin"
+            src="/img/linkedin_L.svg"
+            alt="LinkdIn"
+            height="48"
+            width="48"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

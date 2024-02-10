@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="img/Favi.png" sizes="32x32" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <title>Muhammad's Portfolio</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="/index.html" role="menuitem" class="navigation-list__item">
+        <img
+          class="page-header__item"
+          src="/img/Muhammad-logos.png"
+          alt="logo"
+        />
+      </a>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="/index.html" role="menuitem" class="navigation-list__item">
+              Home
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="/about.html" role="menuitem" class="navigation-list__item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="/work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Projects</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="/contact.html"
+              role="menuitem"
+              class="navigation-list__item"
+            >
+              Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="projects-class">
+      <div class="details_container">
+        <div>
+          <button><a href="/work.html">Back to projects</a></button>
+        </div>
+        <h1>MeetBIT (PWA)</h1>
+        <div>
+          <img class="project-image" src="/img/meetIcon.PNG" alt="cineF" />
+        </div>
+        <div>
+          <p>
+            The MeetBit App stands as an innovative progressive web application
+            (PWA), seamlessly merging the strengths of both web and mobile apps.
+            Its serverless architecture ensures a smooth user experience,
+            empowering individuals to effortlessly discover, join, and engage in
+            numerous upcoming local IT events. This fosters a sense of community
+            and connection among event-goers.
+          </p>
+        </div>
+        <div>
+          <h2>Development approach</h2>
+          <p>
+            I employed AWS Lambda and the Serverless Toolkit to establish an
+            authorization server, enabling app users to connect to the Google
+            Calendar API through an access token. I developed unit and
+            integration tests, examined individual and collective app component
+            functionality, and conducted end-to-end tests using the Puppeteer
+            tool. Implementing a Web App Manifest and Service Worker transformed
+            the app into a PWA, assessed for performance using Lighthouse. I
+            integrated Recharts, a React-based visualization library, to enhance
+            the app with a pie chart and scatter plot.
+          </p>
+        </div>
+        <div class="text-styles">
+          <h2>Features</h2>
+          <ul>
+            <li>Filter events by city</li>
+            <li>Show/Hide event details</li>
+            <li>Update Number of Events</li>
+            <li>Use the App when offline</li>
+            <li>Visualize data with chart</li>
+            <li>The app is a React application.</li>
+            <li>The app was built using the TDD technique.</li>
+            <li>
+              The app used the Google Calendar API and OAuth2 authentication
+              flow.
+            </li>
+            <li>
+              The app used serverless AWS lambda for the authorization server
+              instead of using a traditional server.
+            </li>
+            <li>The app passed Lighthouse's PWA checklist.</li>
+            <li>
+              The app works offline or in slow network conditions with the help
+              of a service worker.
+            </li>
+            <li>
+              Users will be able to install the app on desktop and add the app
+              to their home screen on mobile.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Tech stack</h2>
+          <ul>
+            <li>React</li>
+            <li>Jest</li>
+            <li>Jest-Cucumber</li>
+            <li>Puppeteer</li>
+            <li>React toastify</li>
+            <li>AWS lambda</li>
+            <li>Google Calender API</li>
+            <li>Atatus</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Live links</h2>
+          <button>
+            <a
+              href="https://github.com/MSIlam/meet.git"
+              class="button button_secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </button>
+          <button class="button button_secondary">
+            <a
+              href="https://msilam.github.io/meet/"
+              class="button button_secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live demo</a
+            >
+          </button>
+        </div>
+        <div>
+          <h2>Challenges and merits</h2>
+          <p>
+            In this project, a major challenge I encountered was adopting the
+            Test-Driven Development (TDD) approach, which involved writing tests
+            before implementing the actual code—an unfamiliar methodology for
+            me. To overcome this obstacle, I invested considerable time in
+            acquiring proficiency with various testing tools, such as Jest for
+            unit and integration testing, Puppeteer for end-to-end testing, and
+            Cucumber for user acceptance testing.
+          </p>
+        </div>
+
+        <div>
+          <button><a href="/work.html">Back to projects</a></button>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a class="social-media__item" href="#"
+          ><img
+            id="twitter"
+            src="/img/twitter_L.svg"
+            alt="twitter"
+            height="48"
+            width="48"
+        /></a>
+        <a
+          class="social-media__item"
+          href="https://github.com/MSIlam/Responsive_portfolio"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            id="github"
+            src="/img/github_L.svg"
+            alt="github"
+            height="48"
+            width="48"
+        /></a>
+        <a
+          class="social-media__item"
+          href="http://www.linkedin.com/in/muhammad-saiful-islam-801a5516b"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            id="linkdin"
+            src="/img/linkedin_L.svg"
+            alt="LinkdIn"
+            height="48"
+            width="48"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
