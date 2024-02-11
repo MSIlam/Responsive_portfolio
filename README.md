@@ -6,6 +6,5 @@ A personal responsive portfolio build with HTML, CSS and Bootstrap. For practice
 - JavaScript
 - Getform
 - gh-pages
-- Bootstrap
 
 ## Link: https://MSIlam.github.io/Responsive_portfolio/
