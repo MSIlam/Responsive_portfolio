@@ -231,109 +231,112 @@ display: flex;
 }
 
 /*About start#############################################*/
-
 /* About stylings */
 .content-about,
 .about-me {
     text-align: center;
 }
+
 /* About section styling */
 .content-about {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: center; /* Adjust as needed for spacing between items */
-    margin: 0 5%; /* Adjust the margins as needed */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 5%;
     padding: 20px;
 }
 
 /* Individual component styling */
 .about-me {
     margin: 5px 2%;
-    width: calc(50% - 20px); /* Adjust the width as needed with margin included */
+    width: calc(50% - 20px);
 }
 
 .my-skills {
     display: flex;
     flex-wrap: wrap;
-    /* width:80vw; */
     justify-content: center;
     margin: 0 15%;
     text-align: justify;
-    }
-    .tool-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width:100%;
-    }
+}
 
-    .toolbelt {
-        overflow: hidden;
-        text-align: center;
-      }
-    
-      .tool-tocken {
-        white-space: nowrap;
-        overflow: hidden;
-        display: inline-block;
-      }
-    .image-container {
-        display: inline-block;
-        white-space: nowrap;
-        animation: runningRibbon 30s linear infinite; /* Adjust animation duration as needed */
-      }
-    
-      .tool-img {
-        width: 120px; /* Adjust as needed for image size */
-        height: 120px;
-        margin: 10px; /* Adjust as needed for spacing between images */
-      }
+.tool-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
 
-      /* skill grid */
-      .tool-grid {
-display:grid;
-grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-margin: 0 15%;
-gap:20px;
-align-items: start;
-justify-content: center;
+.tool-tocken {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
 
-      }
+.image-container {
+    display: inline-block;
+    white-space: nowrap;
+    animation: runningRibbon 30s linear infinite;
+}
+
+.tool-img {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+}
+
+/* Skill grid */
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 0 15%;
+    gap: 20px;
+    align-items: start;
+    justify-content: center;
+}
+
 .tool-list {
-            /* width: auto; */
-            /* max-width: 100%; */
-            height: 0 auto;
-            margin: 10px;
-            border-radius: 10px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column; /* Change to column to stack items vertically */
-            text-align: center;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-            
-          }
+    height: 0 auto;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
 
-          .tool-title {
-            padding: 0px;
-            color: var(--color-2);
-            background-color: var(--secondary-color);
-            border-bottom: 2px solid black;
-            font-weight: bold;
-            font-family: "Great Vibes", cursive;
-          }
-          
-          .tool-section {
-            display: grid; /* Use grid layout for the spans */
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust column width as needed */
-            gap: 5px;
-            padding: 10px;
-          }
-          .tool-span {
-            border-radius: 20px;
-            font-family: "Playfair Display", serif;
-          }
+.tool-title {
+    padding: 0px;
+    color: var(--color-2);
+    background-color: var(--secondary-color);
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    font-family: "Great Vibes", cursive;
+}
+
+.tool-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 5px;
+    padding: 10px;
+}
+
+.tool-span {
+    border-radius: 20px;
+    font-family: "Playfair Display", serif;
+}
+
+.bucket-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5%;
+    text-align: center;
+}
+
 /* About end##################################################### */
-
 
 /* contact styling start ################################### */
 
@@ -347,7 +350,6 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; Allow items to wrap to the next line if needed */
     margin: 20px; /* Adjust the margin as needed */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     height:70vh;
@@ -358,9 +360,6 @@ align-items: center;
 
 .my-contact {
     flex:1;
-    /* flex-direction: column; */
-    /* justify-content: space-around; Adjust as needed for spacing between items */
-    /* max-width: 400px; Adjust the maximum width as needed */
     padding: 20px;
     background-color: var(--primary-color);
     height: 100%;
@@ -369,8 +368,6 @@ align-items: center;
 
 .form-container {
     flex:1;
-    /* max-width: 500px; Adjust the maximum width as needed */
-    /* margin: 10px; Adjust the margin as needed */
     padding: 20px;
     max-width: 60%;
     height: 100%;
@@ -433,6 +430,7 @@ button {
     padding:5px;
     opacity: 1;
     border-radius: 20px;
+    margin: 2px;
 }
 
 button:hover {
@@ -505,6 +503,7 @@ span {
 @media all and (min-width: 0px) and (max-width: 500px) {
     .content-about {
         justify-content: center;
+        padding-top: 50px;
     }
 
     body {
@@ -534,6 +533,11 @@ span {
         display: flex;
         flex-direction: column;
         padding-top: 50px;
+    }
+    .main-text {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
     }
     .profile__portrait {
         height: 300px;
@@ -613,10 +617,19 @@ span {
     .about-me {
         width: 100%; /* Take up full width on smaller screens */
     }
+    .content-about {
+        justify-content: center;
+        padding-top: 50px;
+    }
     .main-class {
         display: flex;
         flex-direction: column;
         padding-top: 60px;
+    }
+    .main-text {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
     }
     .main-contact {
         display: flex;
