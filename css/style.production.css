@@ -14,7 +14,7 @@
     top: 0;
     align-items: center;
     width: 100%;
-    background-color: #474743; 
+    background-color: #2F4F4F; 
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     justify-content: space-between; /* Align items to the center right */
@@ -376,7 +376,7 @@ align-items: center;
 .my-contact {
     flex:1;
     padding: 20px;
-    background-color: #474743;
+    background-color: #2F4F4F;
     height: 100%;
     max-width: 40%;
 }
@@ -597,7 +597,7 @@ span {
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: #474743;
+        background-color: #2F4F4F;
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -706,6 +706,10 @@ span {
   .home-span{
     font-size: 16px;
   }
+
+  .projects-class {
+    margin: 30px auto;
+}
 
 }
 
