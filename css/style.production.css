@@ -280,8 +280,8 @@ display: flex;
   &:hover {
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
-            transform: scale(1.05); /* Adjust the scale value for the pop-up effect */
-  }
+            transform: scale(1.05);
+}
 }
 
 .card-title {
@@ -306,13 +306,12 @@ display: flex;
     }
     
     .card-text {
-        height: 120px; /* Adjust the height as needed */
+        height: 120px; 
       }
     
     
     .button-container {
-        /* padding-bottom: 10px; */
-        /* height:40px; */
+        
         padding: 90px 0 10px 0;
         /* padding-bottom: 10px */
     }
