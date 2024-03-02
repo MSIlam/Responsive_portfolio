@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="../img/Favi.png" sizes="32x32" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/style.min.css" />
+    <title>Muhammad's Portfolio</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="../index.html" role="menuitem" class="navigation-list__item">
+        <img
+          class="page-header__item"
+          src="../img/logo-portfolio3.png"
+          alt="logo"
+        />
+      </a>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="../index.html"
+              role="menuitem"
+              class="navigation-list__item"
+            >
+              Home
+            </a>
+          </li>
+          <li role="presentation">
+            <a
+              href="../about.html"
+              role="menuitem"
+              class="navigation-list__item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="../work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Projects</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="../contact.html"
+              role="menuitem"
+              class="navigation-list__item"
+            >
+              Contact</a
+            >
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main class="projects-class">
+      <div class="details_container">
+        <div>
+          <button><a href="../work.html">Back to projects</a></button>
+        </div>
+        <h1>Case Study for myFlix full-stack project</h1>
+        <div>
+          <img class="project-image" src="../img/myFlix.PNG" alt="cineF" />
+        </div>
+        <div>
+          <h2>Overview</h2>
+          <p>
+            A single-page application designed to facilitate effortless
+            searching and filtering of a wide array of films, offering
+            comprehensive insights for each. Comprising a backend and two
+            frontend clients, the backend serves as the repository for movies
+            stored in a database, alongside housing the API facilitating
+            interaction with said database. Meanwhile, the frontend clients,
+            developed using React and Angular respectively, furnish users with
+            an intuitive interface for exploring movies, accessing detailed
+            movie information, managing user profiles, and curating lists of
+            favorite films.
+          </p>
+        </div>
+        <div>
+          <h2>Purpose and Objectives</h2>
+          <p>
+            Within the framework of a CareerFoundry course aimed at mastering
+            full-stack web development, I conceived and developed this personal
+            project. The objective was to craft a dynamic, responsive, and
+            captivating web application tailored to offer users insights and
+            inspiration across a spectrum of movies. The endeavor posed several
+            challenges, including constructing an API from the ground up,
+            configuring and linking a database, and leveraging prominent
+            frontend JavaScript libraries/frameworks such as React and Angular
+            to fashion compelling interactive user interfaces. Simultaneously,
+            the project was structured to serve as an exemplary portfolio piece
+            while acquainting me with typical project requisites such as user
+            stories and user flows.
+          </p>
+        </div>
+        <div class="text-styles">
+          <h2>Features</h2>
+          <ul>
+            <li>User registration and login</li>
+            <li>View a list of all moves</li>
+            <li>See details for each movie</li>
+            <li>Search movies by name</li>
+            <li>Update profile (username, password, email, birthday)</li>
+            <li>
+              Users can add to add remove a movie to/from their list of
+              favorites
+            </li>
+            <li>Users can delete their account</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Tech Stack</h2>
+          <h3>MERN and MEAN stack</h3>
+          <table class="case-table">
+            <tr>
+              <td>Backend</td>
+              <td>
+                NodeJS (Express, Morgan, bodyParser, mongoose, CORS, Passport,
+                bcrypt), MongoDB, Postman, Heroku, JSDoc
+              </td>
+              <td>
+                <a href="#"><button>Github</button></a>
+              </td>
+            </tr>
+            <tr>
+              <td>React client</td>
+              <td>
+                JavaScript, React, React Redux, React Bootstrap, Parcel,
+                PropTypes, Axios, Netlify
+              </td>
+              <td>
+                <a
+                  class="button button_secondary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="#"
+                  ><button>Live</button></a
+                ><a
+                  class="button button_secondary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="#"
+                  ><button>Github</button></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Angular client</td>
+              <td>
+                TypeScript, Angular, Angular-Material, GitHub-Pages, TypeDoc
+              </td>
+              <td>
+                <a
+                  class="button button_secondary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="#"
+                  ><button>Live</button></a
+                ><a
+                  class="button button_secondary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/MSIlam/myFlix-client-mi"
+                  ><button>Github</button></a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <h2>Duration</h2>
+          <p>
+            In total, the project spanned around 2.5 months, notably longer than
+            what would typically be expected for a project of this nature in a
+            professional setting. However, given its nature as a study project,
+            there was a wealth of knowledge to acquire and challenges to
+            overcome.
+          </p>
+        </div>
+        <div>
+          <h2>Credits and Role</h2>
+          <p>Thanks goes to..</p>
+          <ul>
+            <li>Main dev: Muhammad Saiful Islam</li>
+            <li>Mentor: Renish Vashkaran</li>
+            <li>Tutor: Othman Yamak</li>
+            <li>Advisor: Theano Eirini Kakaziani</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Approach</h2>
+          <h3>Backend</h3>
+        </div>
+        <div class="case-class">
+          <div class="case-text">
+            <p>
+              On the server side, I developed a RESTful API employing Node.js
+              and Express, complemented by a non-relational database, MongoDB.
+              This API facilitates data retrieval concerning movies and users
+              from the database through standard HTTP requests, delivering JSON
+              responses. Bridging the API and the database is the business logic
+              layer, which utilizes Mongoose for seamless connectivity.
+            </p>
+            <h4>Authentication</h4>
+            <p>
+              To prevent any unauthorized CRUD operations, JWT authentication
+              was implemented, necessitating users to sign in or sign up.
+              Additionally, password hashing was incorporated to ensure that
+              even the database manager couldn't access users' passwords.
+              Postman was utilized to test the endpoints.
+            </p>
+          </div>
+          <div class="case-img">
+            <img src="../img/API2.png" alt="API-image" />
+          </div>
+        </div>
+        <div>
+          <h3>React client</h3>
+        </div>
+        <div class="case-class">
+          <div class="case-img">
+            <div>
+              <img src="../img/CineF2.png" alt="react-image" />
+            </div>
+            <div>
+              <img src="../img/cineFlix-movie.png" alt="react-image" />
+            </div>
+          </div>
+          <div class="case-text">
+            <p>
+              After establishing the backend, I proceeded to develop the
+              frontend, i.e., the user interface, using the React and
+              React-Redux. The frontend is designed as a single-page, responsive
+              web application (SPA), constructed in accordance with the MVC
+              design pattern. It comprises several distinct views: signup,
+              login, main view (displaying all movies as cards), movie view
+              (providing detailed information about a specific movie), as well
+              as a profile view (where users can edit their user data and view
+              cards for their favorite movies).
+            </p>
+            <h4>Learning React</h4>
+            <p>
+              This was the most significant and challenging aspect of the
+              project for me, but it was also incredibly exciting. Starting with
+              React presented a steep learning curve, especially compared to
+              traditional HTML, CSS, and JavaScript. The approach to interface
+              creation and design is markedly different, requiring extensive
+              research, experimentation, and problem-solving. Throughout the
+              project, I experimented with both Class and Functional components.
+              Ultimately, I found functional components to be more efficient,
+              and they became my preferred choice. Initially, grasping the
+              React-Redux architecture posed a significant challenge. However,
+              through consistent effort, continuous experimentation, and
+              invaluable guidance from tutors and mentors, I gained clarity and
+              confidence in completing the project.
+            </p>
+          </div>
+        </div>
+        <div>
+          <h3>Angular client</h3>
+        </div>
+        <div class="case-class">
+          <div class="case-text">
+            <p>
+              Subsequently, I developed another client to access the same API
+              and database, this time utilizing the Angular framework. Similar
+              to the React client, it is a single-page, responsive web
+              application offering much of the same functionality. After
+              registration/login, users land on a main view displaying all
+              movies, where they can open modals to view details about specific
+              movies, genres, or directors. Creating the layout, predominantly
+              following Material design principles, provided a fresh experience.
+              Despite its complexity, I found Angular's basics surprisingly
+              efficient and straightforward. While I anticipated a similar user
+              flow as in the React app, Angular's workflow naturally guided me
+              toward creating a more streamlined and efficient outcome. However,
+              I realized that for smaller projects, Angular's comprehensive
+              feature set might be deemed excessive.
+            </p>
+          </div>
+          <div class="case-img">
+            <div>
+              <img src="../img/myflix-modal.png" alt="angular-image" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>Key learning</h2>
+
+          <table class="case-table">
+            <tr>
+              <th>Backend</th>
+              <th>React client</th>
+              <th>Angular client</th>
+            </tr>
+            <tr>
+              <td>
+                NodeJS setup with nvm (node version manager) and npm (node
+                package manager).
+              </td>
+              <td>
+                Use of Parcel built tool to convert (transpile, bundle and
+                minify) a project from development stage to a production
+                version.
+              </td>
+              <td>Working with TypeScript.</td>
+            </tr>
+            <tr>
+              <td>
+                Creating API endpoints with Express and test them with Postman.
+              </td>
+              <td>
+                Using React Bootstrap as a UI library for responsive styling.
+              </td>
+              <td>Use of Angular CLI.</td>
+            </tr>
+            <tr>
+              <td>
+                Relational and non-relational databases (usage, differences and
+                advantages).
+              </td>
+              <td>Class components and functional components in React.</td>
+              <td>
+                Architecture of Angular Apps (component= class + template +
+                services + metadata).
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Authentication and authorization (HTTP and JWT) with Passport
+                middleware.
+              </td>
+              <td>
+                Working with state and props to manage in-memory data and pass
+                it between components.
+              </td>
+              <td>Angular-Material.</td>
+            </tr>
+            <tr>
+              <td>Data security with CORS and password hashing.</td>
+              <td>
+                Working with Redux in React state management (data flow between
+                components).
+              </td>
+              <td>Routing in Angular.</td>
+            </tr>
+            <tr>
+              <td>Using JSdoc for documentation.</td>
+              <td>
+                Using different ways to store data locally (Cookies, HTML5 Web
+                Storage, IndexedDB.
+              </td>
+              <td>Using TypeDoc for documentation.</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <h2>Challenges and merits</h2>
+          <p>
+            This project was both my favorite and most challenging endeavor. At
+            first, understanding how the server side worked, especially its
+            security features and logic layers, was tough. When it comes to the
+            client-side, I faced challenges in grasping the infrastructure of
+            both React and Angular. Implementing various functionalities
+            consumed a significant amount of time. But with lots of reading and
+            some help from my tutor, it started to make sense. I don't have a
+            clear preference for either React or Angular. Each has its own
+            strengths and weaknesses, and the choice between them depends on the
+            specific project's scope and requirements.
+          </p>
+        </div>
+        <div>
+          <h2>Conclusion</h2>
+          <p>
+            The mFlixApp reflects my progress in learning both backend and
+            frontend technologies. It's a responsive movie app packed with
+            features, including user authentication and management
+            functionalities. Going from writing complex server code and setting
+            up databases to creating two cool user interfaces felt like a big
+            achievement.
+          </p>
+        </div>
+
+        <div>
+          <button><a href="../work.html">Back to projects</a></button>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a
+          class="social-media__item"
+          href="https://github.com/MSIlam/Responsive_portfolio"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            id="github"
+            src="../img/github_L.svg"
+            alt="github"
+            height="48"
+            width="48"
+        /></a>
+        <a
+          class="social-media__item"
+          href="http://www.linkedin.com/in/muhammad-saiful-islam-801a5516b"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            id="linkdin"
+            src="../img/linkedin_L.svg"
+            alt="LinkdIn"
+            height="48"
+            width="48"
+        /></a>
+      </div>
+    </footer>
+    <script src="../js/navbar.js"></script>
+  </body>
+</html>
