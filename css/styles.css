@@ -132,7 +132,7 @@ border-radius: 50%;
 box-shadow: 0 0 0 5px #ADD8E6,
 0 0 20px #ADD8E6,
 0 0 50px #ADD8E6;
-
+animation: animate 30s linear infinite;
 animation-duration: calc(150s / var(--i));
 
 }
